@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="signin.css">
+</head>
+
+<body>
+
+    <div id="form_wrapper">
+        <div id="form_left">
+            <form action="home2.html" onsubmit="return validation()">
+
+                <img src="image\desktop-icon.png" alt="computer icon">
+        </div>
+        <div id="form_right">
+
+
+            <h1>Member Login</h1>
+            <div class="input_container">
+                <i class="fas fa-envelope"></i>
+                <input placeholder="Email" type="email" name="Email" id="email" class='input_field'>
+            </div>
+            <div class="input_container">
+                <i class="fas fa-lock"></i>
+                <input placeholder="Password" type="password" name="Password" id="password" class='input_field'>
+            </div>
+            <input type="submit" value="Login" id='input_submit' class='input_field'>
+            <p id="error"></p>
+            </form>
+        </div>
+    </div>
+    <script>
+        function validation() {
+            var Email = document.getElementById("email").value;
+            var Password = document.getElementById("password").value;
+            var error = document.getElementById("error")
+            if (Email == "") {
+                document.getElementById("error").innerHTML = "fileds can not be empty";
+                return false;
+            }
+            if (Password == "") {
+                document.getElementById("error").innerHTML = "fields cannot be empty";
+            } else {
+                document.getElementById("error").innerHTML = "validation successful";
+                return true;
+            }
+
+
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>

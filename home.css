@@ -1,0 +1,43 @@
+jumbotron {
+    display: inline-block;
+    padding-top: 100px;
+    height: auto;
+    padding: 5px 0
+}
+
+img {
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 100px;
+    border: solid black 1px;
+    padding: 2px;
+}
+
+.container {
+    border: 2px solid black;
+    background-color: white;
+}
+
+footer nav {
+    display: inline;
+}
+
+footer nav #t {
+    background: blueviolet;
+    height: 1.5em;
+    padding: 15px;
+}
+
+footer nav #f {
+    background: blue;
+    height: 1.5em;
+    padding: 15px;
+}
+
+footer nav #g {
+    background: red;
+    height: 1.5em;
+    padding: 15px;
+}
