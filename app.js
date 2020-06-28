@@ -19,7 +19,7 @@ const nav=
 const booksRouter=require('./src/routes/bookRoutes')(nav)
 const signupRouter=require('./src/routes/signupRoutes')(nav)
 const signinRouter=require('./src/routes/signinRoutes')(nav)
-const authorRouter=require('./src/routes/authorRoutes')(nav)
+const authorRouter=require('./src/routes/authorRoutess')(nav)
 app.use(express.static('./public'));
 app.set('view engine','ejs');
 app.set('views','./src/views');
@@ -35,4 +35,4 @@ title:'library'
     });
 });
 
-app.listen(5000);
+app.listen(3000);
